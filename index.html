@@ -10,6 +10,7 @@
       font-family: 'Courier New', Courier, monospace;
       padding: 20px;
       line-height: 1.6;
+      transition: background-color 0.3s;
     }
     h1 {
       color: #ffcc00;
@@ -61,6 +62,18 @@
     section.active {
       display: block;
     }
+
+    /* Efecto de parpadeo cuántico */
+    @keyframes flash {
+      0% { background-color: #1e1e2f; }
+      25% { background-color: #00ffaa33; }
+      50% { background-color: #00ffcc66; }
+      75% { background-color: #1e1e2f; }
+      100% { background-color: #1e1e2f; }
+    }
+    .flash {
+      animation: flash 1s ease;
+    }
   </style>
 </head>
 <body>
@@ -70,6 +83,7 @@
     <button onclick="showSection('parte1')">Parte 1</button>
     <button onclick="showSection('parte2')">Parte 2</button>
     <button onclick="showSection('parte3')">Parte 3</button>
+    <button onclick="showSection('parte4')">Parte 4</button>
   </nav>
 
   <!-- Parte 1 -->
@@ -125,11 +139,54 @@
     </p>
   </section>
 
+  <!-- Parte 4 -->
+  <section id="parte4">
+    <h2>Parte 4: Tecladón y la Receta de Atún Legendaria</h2>
+    <p>
+      Tras dominar el Metaverso Felino, Tecladón sintió un vacío existencial en su alma gatuna. Los castillos digitales, 
+      los memes infinitos y los teclados holográficos ya no eran suficientes. En los rincones más oscuros del ciberespacio, 
+      comenzó a escuchar rumores sobre un archivo prohibido: la <span class="highlight">Receta de Atún Legendaria</span>, 
+      una combinación ancestral capaz de otorgar poder y sabor infinitos.
+    </p>
+    <p>
+      Los <span class="highlight">Ratones de la Oscuridad</span> custodiaban esa receta en un servidor oculto, 
+      protegido por firewalls tan duros como una lata cerrada de atún. Para alcanzarla, Tecladón tuvo que 
+      hackear líneas de código antiguas, escritas en un lenguaje perdido conocido como <span class="highlight">Gato++</span>.
+    </p>
+    <p>
+      En su travesía, conoció a una misteriosa aliada llamada <span class="highlight">Whisker-404</span>, 
+      una gata experta en romper algoritmos y abrir puertos prohibidos. Juntos descifraron los 
+      <span class="highlight">Bytes del Sabor Supremo</span>, un conjunto de claves que solo podían activarse 
+      con el sonido correcto de un maullido.
+    </p>
+    <p>
+      Haz clic para intentar reproducirlo tú mismo: 
+      <span class="maullido" onclick="activarReceta('¡Clave de sabor activada! Atún codificado desbloqueado.')">Miau!</span>
+      <span class="maullido" onclick="activarReceta('¡Firewall derrotado con un ronroneo épico!')">Miau!</span>
+      <span class="maullido" onclick="activarReceta('¡Receta legendaria de atún transferida a la base de datos felina!')">Miau!</span>
+    </p>
+    <p>
+      Cuando la última línea de código se ejecutó, el aroma del <span class="highlight">Atún Cuántico</span> 
+      llenó la red. Tecladón había logrado lo imposible: obtener la receta definitiva, la que unía el mundo físico 
+      y el digital en un solo banquete cósmico. Desde entonces, su nombre es susurrado entre gatos y servidores: 
+      <span class="highlight">Tecladón, el Cocinero del Ciberespacio</span>.
+    </p>
+  </section>
+
   <script>
     function showSection(id) {
       const sections = document.querySelectorAll('section');
       sections.forEach(section => section.classList.remove('active'));
       document.getElementById(id).classList.add('active');
+    }
+
+    function activarReceta(mensaje) {
+      alert(mensaje);
+      const body = document.querySelector('body');
+      body.classList.add('flash');
+      setTimeout(() => {
+        body.classList.remove('flash');
+      }, 1000);
     }
   </script>
 </body>
