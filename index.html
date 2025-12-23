@@ -51,7 +51,6 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.2s;
     }
     nav button:hover {
       background-color: #5555aa;
@@ -63,7 +62,6 @@
       display: block;
     }
 
-    /* Efecto de parpadeo cuántico */
     @keyframes flash {
       0% { background-color: #1e1e2f; }
       25% { background-color: #00ffaa33; }
@@ -74,152 +72,223 @@
     .flash {
       animation: flash 1s ease;
     }
+    .epico {
+      color: #ff9900;
+      font-weight: bold;
+      text-shadow: 0 0 10px #ff9900, 0 0 20px #ff6600;
+    }
   </style>
 </head>
 <body>
-  <h1>La Saga de Tecladón</h1>
 
-  <nav>
-    <button onclick="showSection('parte1')">Parte 1</button>
-    <button onclick="showSection('parte2')">Parte 2</button>
-    <button onclick="showSection('parte3')">Parte 3</button>
-    <button onclick="showSection('parte4')">Parte 4</button>
-    <button onclick="showSection('parte5')">Parte 5</button>
-  </nav>
+<h1>La Saga de Tecladón</h1>
 
-  <!-- Parte 1 -->
-  <section id="parte1" class="active">
-    <h2>Parte 1: El Origen de Tecladón</h2>
-    <p>
-      En un tranquilo hogar, un gato llamado Tecladón caminó sobre el teclado de su humano y, sin querer, 
-      envió una serie de <span class="sisi">sisisisisisisisisisisisisisis...</span> al chat de todo el vecindario. 
-      Nadie sabía que esto marcaría el inicio de su legendaria saga.
-    </p>
-  </section>
+<nav>
+  <button onclick="showSection('parte1')">Parte 1</button>
+  <button onclick="showSection('parte2')">Parte 2</button>
+  <button onclick="showSection('parte3')">Parte 3</button>
+  <button onclick="showSection('parte4')">Parte 4</button>
+  <button onclick="showSection('parte5')">Parte 5</button>
+</nav>
 
-  <!-- Parte 2 -->
-  <section id="parte2">
-    <h2>Parte 2: Duelo de teclados internacional</h2>
-    <p>
-      Tecladón fue retado por el gato hacker más famoso del otro lado del mundo. El duelo consistía en 
-      escribir más <span class="sisi">sisisisisisisisis...</span> que su oponente, todo mientras 
-      esquivaban obstáculos de ratones y ratones virtuales. 
-      Finalmente, Tecladón ganó y fue coronado campeón mundial de gatos hackers.
-    </p>
-  </section>
+<!-- Parte 1 -->
+<section id="parte1" class="active">
+  <h2>Parte 1: El Origen de Tecladón</h2>
+  <p>
+    En un tranquilo hogar, un gato llamado Tecladón caminó sobre el teclado de su humano y, sin querer, 
+    envió una serie de <span class="sisi">sisisisisisisisisisisisisisis...</span> al chat de todo el vecindario. 
+    Nadie sabía que esto marcaría el inicio de su legendaria saga.
+  </p>
+</section>
 
-  <!-- Parte 3 -->
-  <section id="parte3">
-    <h2>Parte 3: Tecladón en el Metaverso Felino</h2>
-    <p>
-      Después de conquistar el mundo físico y la red, Tecladón descubrió un universo aún más grande: 
-      el <span class="highlight">Metaverso Felino</span>, un lugar donde los gatos podían interactuar sin límites, 
-      saltar sobre teclados gigantes, cazar ratones virtuales y crear castillos de atún digitales.
-    </p>
-    <p>
-      Allí conoció a los legendarios <span class="highlight">Guardias del Ratón</span>, gatos antiguos que protegían 
-      los secretos más valiosos de los humanos. Para ser aceptado, Tecladón tuvo que superar la 
-      <span class="highlight">Prueba de los 9 Mil Maullidos</span>.
-    </p>
-    <p>
-      Cada maullido activaba un código secreto que desbloqueaba portales y recompensas virtuales. 
-      Haz clic en un maullido para ver su poder: 
-      <span class="maullido" onclick="alert('¡Portal desbloqueado!')">Miau!</span>
-      <span class="maullido" onclick="alert('¡Receta secreta de atún obtenida!')">Miau!</span>
-      <span class="maullido" onclick="alert('¡Memes felinos activados!')">Miau!</span>
-    </p>
-    <p>
-      Con cada portal que abría, Tecladón expandía su imperio, reclutando gatos de todos los rincones del planeta. 
-      Incluso logró crear un <span class="highlight">correo cuántico para gatos</span>, donde cada mensaje contenía 
-      recetas secretas de atún, estrategias de hackeo felino y memes que solo los gatos podían entender.
-    </p>
-    <p>
-      Al final, Tecladón se convirtió en una <span class="highlight">leyenda interdimensional</span>, conocido no solo como 
-      el Maestro del Teclado, sino también como el <span class="highlight">Sultán del Metaverso Felino</span>, 
-      capaz de entrar y salir de cualquier dispositivo digital con solo un maullido.
-    </p>
-  </section>
+<!-- Parte 2 -->
+<section id="parte2">
+  <h2>Parte 2: Duelo de teclados internacional</h2>
+  <p>
+    Tecladón fue retado por el gato hacker más famoso del otro lado del mundo. El duelo consistía en 
+    escribir más <span class="sisi">sisisisisisisisis...</span> que su oponente, todo mientras 
+    esquivaban obstáculos de ratones y ratones virtuales. 
+    Finalmente, Tecladón ganó y fue coronado campeón mundial de gatos hackers.
+  </p>
+</section>
 
-  <!-- Parte 4 -->
-  <section id="parte4">
-    <h2>Parte 4: Tecladón y la Receta de Atún Legendaria</h2>
-    <p>
-      Tras dominar el Metaverso Felino, Tecladón sintió un vacío existencial en su alma gatuna. Los castillos digitales, 
-      los memes infinitos y los teclados holográficos ya no eran suficientes. En los rincones más oscuros del ciberespacio, 
-      comenzó a escuchar rumores sobre un archivo prohibido: la <span class="highlight">Receta de Atún Legendaria</span>, 
-      una combinación ancestral capaz de otorgar poder y sabor infinitos.
-    </p>
-    <p>
-      Los <span class="highlight">Ratones de la Oscuridad</span> custodiaban esa receta en un servidor oculto, 
-      protegido por firewalls tan duros como una lata cerrada de atún. Para alcanzarla, Tecladón tuvo que 
-      hackear líneas de código antiguas, escritas en un lenguaje perdido conocido como <span class="highlight">Gato++</span>.
-    </p>
-    <p>
-      En su travesía, conoció a una misteriosa aliada llamada <span class="highlight">Whisker-404</span>, 
-      una gata experta en romper algoritmos y abrir puertos prohibidos.
-    </p>
-    <p>
-      Cuando la última línea de código se ejecutó, el aroma del <span class="highlight">Atún Cuántico</span> 
-      llenó la red. Desde entonces, su nombre es susurrado entre gatos y servidores: 
-      <span class="highlight">Tecladón, el Cocinero del Ciberespacio</span>.
-    </p>
-  </section>
+<!-- Parte 3 -->
+<section id="parte3">
+  <h2>Parte 3: Tecladón en el Metaverso Felino</h2>
+  <p>
+    Después de conquistar el mundo físico y la red, Tecladón descubrió un universo aún más grande: 
+    el <span class="highlight">Metaverso Felino</span>, un lugar donde los gatos podían interactuar sin límites, 
+    saltar sobre teclados gigantes, cazar ratones virtuales y crear castillos de atún digitales.
+  </p>
+  <p>
+    Allí conoció a los legendarios <span class="highlight">Guardias del Ratón</span>, gatos antiguos que protegían 
+    los secretos más valiosos de los humanos. Para ser aceptado, Tecladón tuvo que superar la 
+    <span class="highlight">Prueba de los 9 Mil Maullidos</span>.
+  </p>
+  <p>
+    Cada maullido activaba un código secreto que desbloqueaba portales y recompensas virtuales. 
+    Haz clic en un maullido para ver su poder: 
+    <span class="maullido" onclick="alert('¡Portal desbloqueado!')">Miau!</span>
+    <span class="maullido" onclick="alert('¡Receta secreta de atún obtenida!')">Miau!</span>
+    <span class="maullido" onclick="alert('¡Memes felinos activados!')">Miau!</span>
+  </p>
+  <p>
+    Con cada portal que abría, Tecladón expandía su imperio, reclutando gatos de todos los rincones del planeta. 
+    Incluso logró crear un <span class="highlight">correo cuántico para gatos</span>, donde cada mensaje contenía 
+    recetas secretas de atún, estrategias de hackeo felino y memes que solo los gatos podían entender.
+  </p>
+  <p>
+    Al final, Tecladón se convirtió en una <span class="highlight">leyenda interdimensional</span>, conocido no solo como 
+    el Maestro del Teclado, sino también como el <span class="highlight">Sultán del Metaverso Felino</span>, 
+    capaz de entrar y salir de cualquier dispositivo digital con solo un maullido.
+  </p>
+</section>
 
-  <!-- Parte 5 -->
-  <section id="parte5">
-    <h2>Parte 5: Tecladón y el Imperio de las Redes Sociales</h2>
+<!-- Parte 4 -->
+<section id="parte4">
+  <h2>Parte 4: Tecladón y la Receta de Atún Legendaria</h2>
+  <p>
+    Tras dominar el Metaverso Felino, Tecladón sintió un vacío existencial en su alma gatuna. Los castillos digitales, 
+    los memes infinitos y los teclados holográficos ya no eran suficientes. En los rincones más oscuros del ciberespacio, 
+    comenzó a escuchar rumores sobre un archivo prohibido: la <span class="highlight">Receta de Atún Legendaria</span>, 
+    una combinación ancestral capaz de otorgar poder y sabor infinitos.
+  </p>
+  <p>
+    Los <span class="highlight">Ratones de la Oscuridad</span> custodiaban esa receta en un servidor oculto, 
+    protegido por firewalls tan duros como una lata cerrada de atún. Para alcanzarla, Tecladón tuvo que 
+    hackear líneas de código antiguas, escritas en un lenguaje perdido conocido como <span class="highlight">Gato++</span>.
+  </p>
+  <p>
+    En su travesía, conoció a una misteriosa aliada llamada <span class="highlight">Whisker-404</span>, 
+    una gata experta en romper algoritmos y abrir puertos prohibidos. Juntos descifraron los 
+    <span class="highlight">Bytes del Sabor Supremo</span>, un conjunto de claves que solo podían activarse 
+    con el sonido correcto de un maullido.
+  </p>
+  <p>
+    Haz clic para intentar reproducirlo tú mismo: 
+    <span class="maullido" onclick="activarReceta('¡Clave de sabor activada! Atún codificado desbloqueado.')">Miau!</span>
+    <span class="maullido" onclick="activarReceta('¡Firewall derrotado con un ronroneo épico!')">Miau!</span>
+    <span class="maullido" onclick="activarReceta('¡Receta legendaria de atún transferida a la base de datos felina!')">Miau!</span>
+  </p>
+</section>
 
-    <p>
-      Tras conquistar mundos digitales y secretos prohibidos, Tecladón se enfrentó a un reto distinto:
-      la atención. Las redes sociales no se dominaban con fuerza ni con código, sino con constancia,
-      carisma y paciencia. Así comenzó en <span class="highlight">MiauTube</span>.
-    </p>
+<!-- Parte 5 Ultra-épica con efectos -->
+<section id="parte5">
+  <h2>Parte 5: Tecladón y el Imperio de las Redes Sociales Ultra-Épico</h2>
+  <p>
+    Tras dominar el <span class="highlight">Atún Cuántico</span>, Tecladón descubrió que el verdadero desafío no era físico ni digital: 
+    era conquistar las redes sociales, un universo donde la fama podía cambiar de un segundo a otro y los trolls acechaban en cada esquina.
+  </p>
 
-    <p>
-      Sus primeros videos eran simples: un gato caminando sobre teclados, mirando fijamente a la cámara,
-      dejando cadenas interminables de caracteres sin sentido. Nadie los veía. El contador marcaba cero.
-      Pero Tecladón siguió, noche tras noche, confiando en que algún día alguien escucharía su maullido.
-    </p>
+  <p class="epico">
+    <strong>En MiauTube</strong>, comenzó sin suscriptores. Sus primeros videos eran experimentos: saltos imposibles sobre teclados, 
+    derrumbes accidentales de castillos de atún y maullidos sincronizados. Al principio nadie lo veía… hasta que un gato influencer accidentalmente lo compartió.
+  </p>
 
-    <p>
-      Un día, el algoritmo despertó. Un solo video se propagó sin control, y Tecladón pasó del anonimato
-      absoluto a ser reconocido como el creador más impredecible de la plataforma.
-    </p>
+  <p>
+    De repente, su canal explotó. Cada maullido era replicado, cada caída de castillo de atún se volvía meme viral. 
+    Suscriptores, comentarios y likes crecían exponencialmente, como si la red misma conspirara para convertirlo en leyenda.
+  </p>
 
-    <p>
-      En <span class="highlight">MiauMiow</span>, aprendió que el tiempo era poder. Adaptó sus maullidos,
-      perfeccionó sus saltos y convirtió cada segundo en espectáculo. Pronto, millones imitaban sus gestos
-      sin comprender su origen.
-    </p>
+  <div id="likes-container" style="position:relative; height:100px;"></div>
 
-    <p>
-      <span class="highlight">Miaustagram</span> le permitió mostrar su lado más artístico. Fotografías
-      caóticas pero elegantes, luces de pantallas reflejadas en sus ojos y un bigote convertido en icono.
-    </p>
+  <p class="epico">
+    <strong>En MiauMiow</strong>, videos cortos, dinámicos y llenos de ritmo felino. Cada salto y maullido sincronizado con la música se volvía tendencia. 
+    Trolls digitales aparecían, pero Tecladón los esquivaba con movimientos felinos y maullidos mágicos.
+  </p>
 
-    <p>
-      En <span class="highlight">MiauBook</span>, Tecladón unió comunidades, escribió relatos largos y
-      se convirtió en una figura respetada por generaciones de gatos digitales.
-    </p>
+  <div id="troll-container" style="position:relative; height:80px;"></div>
 
-    <p>
-      Finalmente, en <span class="highlight">Meawitter</span>, cada palabra corta tenía peso.
-      Un solo “Miau” suyo podía cambiar conversaciones globales.
-    </p>
+  <p>
+    <strong>Miaustagram</strong> lo convirtió en artista. Fotografías de castillos de atún holográficos, selfies épicos frente a servidores brillantes y memes visuales lo hicieron legendario.
+  </p>
 
-    <p>
-      Así, Tecladón pasó de no tener seguidores a ser el
-      <span class="highlight">mayor influencer del Internet Felino</span>,
-      una leyenda viva entre teclados y servidores.
-    </p>
-  </section>
+  <p>
+    <strong>MiauBook</strong> fue su reino comunitario. Fundó grupos, tutoriales de hackeo felino y debates épicos sobre recetas de atún. La comunidad lo veneraba.
+  </p>
 
-  <script>
-    function showSection(id) {
-      const sections = document.querySelectorAll('section');
-      sections.forEach(section => section.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
+  <p class="epico">
+    Finalmente, <strong>Meawitter</strong> era su trono. Cada tweet de Tecladón podía iniciar tendencias, debates o alegrar a miles. Su “Miau” podía cambiar el mundo digital.
+  </p>
+
+  <p>
+    A lo largo de su ascenso, enfrentó desafíos titánicos: trolls, algoritmos caprichosos, imitadores. Pero siempre triunfaba. Cada victoria era celebrada con un maullido épico:
+    <span class="maullido" onclick="maullidoEpico()">sisisisisisisisisisisisisisisisis...</span>
+  </p>
+
+  <p class="epico">
+    Finalmente, tras años de aventuras, memes legendarios y seguidores que se multiplicaban mágicamente, 
+    Tecladón se coronó como <span class="highlight">Emperador del Internet Felino</span>. Su nombre era leyenda en todas las plataformas.
+  </p>
+</section>
+
+<script>
+function maullidoEpico() {
+  alert('¡SISISISISISISISIS EPICAMENTE ACTIVADO!');
+  generarLikes();
+  generarTrolls();
+}
+
+function generarLikes() {
+  const container = document.getElementById('likes-container');
+  const like = document.createElement('div');
+  like.textContent = '❤️';
+  like.style.position = 'absolute';
+  like.style.left = Math.random() * 90 + '%';
+  like.style.bottom = '0px';
+  like.style.fontSize = '24px';
+  like.style.opacity = '1';
+  container.appendChild(like);
+
+  let pos = 0;
+  const anim = setInterval(() => {
+    pos += 2;
+    like.style.bottom = pos + 'px';
+    like.style.opacity = 1 - pos/100;
+    if (pos > 100) {
+      clearInterval(anim);
+      container.removeChild(like);
     }
-  </script>
+  }, 30);
+}
+
+function generarTrolls() {
+  const container = document.getElementById('troll-container');
+  const troll = document.createElement('div');
+  troll.textContent = '👹';
+  troll.style.position = 'absolute';
+  troll.style.left = Math.random() * 90 + '%';
+  troll.style.bottom = '0px';
+  troll.style.fontSize = '30px';
+  container.appendChild(troll);
+
+  let pos = 0;
+  const anim = setInterval(() => {
+    pos += 3;
+    troll.style.bottom = pos + 'px';
+    troll.style.opacity = 1 - pos/120;
+    if (pos > 120) {
+      clearInterval(anim);
+      container.removeChild(troll);
+    }
+  }, 30);
+}
+
+function showSection(id) {
+  const sections = document.querySelectorAll('section');
+  sections.forEach(section => section.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function activarReceta(mensaje) {
+  alert(mensaje);
+  const body = document.querySelector('body');
+  body.classList.add('flash');
+  setTimeout(() => {
+    body.classList.remove('flash');
+  }, 1000);
+}
+</script>
+
 </body>
 </html>
